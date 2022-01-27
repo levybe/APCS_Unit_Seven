@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class ArrayListMethods_Tests {
-/*
         @Test
         @Order(1)
         public void numberListTest() {
@@ -20,7 +19,6 @@ public class ArrayListMethods_Tests {
 
                 assertEquals(expected, ArrayListMethods.numberList());
         }
-*/
 /*
         @Test
         @Order(2)
