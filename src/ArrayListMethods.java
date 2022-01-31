@@ -18,29 +18,42 @@ public class ArrayListMethods {
     public static ArrayList<Double> firstAndLast() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Please enter some decimal numbers. Enter 0 if you have finished entering numbers.");
-        double firstNum = scan.nextDouble();
-        double num = firstNum;
+        double numEntered = scan.nextDouble();
+        double firstNum = numEntered;
+        double lastNum = numEntered;
         double numsEntered = 0;
-        while (num != 0) {
-            num = scan.nextDouble();
-            numsEntered += 1;
+        while (numEntered != 0) {
+            lastNum = numEntered;
+            numsEntered ++;
+            numEntered = scan.nextDouble();
+        }
+        ArrayList<Double> numbers = new ArrayList<Double>();
+        numbers.add(numsEntered);
+        numbers.add(firstNum);
+        numbers.add(lastNum);
+        return numbers;
+    }
+
+    public static boolean double23(ArrayList<Integer> nums) {
+        if (nums.size() < 2) {
+            return false;
+        }
+        else {
+            if (nums.get(0) == 2 && nums.get(1) == 2 || nums.get(0) == 3 && nums.get(1) == 3) {
+                return true;
+            }
+            else {
+                return false;
+            }
         }
     }
 
-    /*
-
-    public static boolean double23(ArrayList<Integer> nums) {
-
-
-    }
-
-
-
-
     public static boolean commonEnd(ArrayList<Integer> a, ArrayList<Integer> b) {
-
-
+        if (a.get(0) == b.get(0) || a.get(a.size() - 1) == b.get(b.size() - 1)) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
-*/
-
 }

@@ -19,7 +19,7 @@ public class ArrayListMethods_Tests {
 
                 assertEquals(expected, ArrayListMethods.numberList());
         }
-/*
+
         @Test
         @Order(2)
         public void firstAndLastTest() throws FileNotFoundException {
@@ -69,8 +69,7 @@ public class ArrayListMethods_Tests {
                 ArrayList<Double> actual = ArrayListMethods.firstAndLast();
                 assertEquals(expected, actual);
         }
-*/
-/*
+
     @Test
     public void double23One() {
         ArrayList<Integer> a = new ArrayList<>();
@@ -116,9 +115,6 @@ public class ArrayListMethods_Tests {
         assertFalse(ArrayListMethods.double23(a));
     }
 
- */
-
-    /*
     @Test
     public void commonEndOne() {
         ArrayList<Integer> a = new ArrayList<>();
@@ -154,6 +150,4 @@ public class ArrayListMethods_Tests {
         b.add(3);
         assertTrue(ArrayListMethods.commonEnd(a, b));
     }
-    */
-
 }
