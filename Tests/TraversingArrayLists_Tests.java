@@ -14,7 +14,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class TraversingArrayLists_Tests {
 
-/*
     @Test
     @Order(1)
     public void getStatesTest() throws FileNotFoundException {
@@ -34,7 +33,6 @@ public class TraversingArrayLists_Tests {
 
     }
 
-
     @Test
     @Order(2)
     public void stateListTest() {
@@ -48,9 +46,6 @@ public class TraversingArrayLists_Tests {
         String actual = TraversingArrayLists.createList(states);
         assertEquals(expected, actual);
     }
-
-     */
-
 
     @Test
     @Order(3)
@@ -74,10 +69,4 @@ public class TraversingArrayLists_Tests {
         ArrayList<Integer> actual = TraversingArrayLists.largestAndSmallest("files/numbers3.txt");
         assertEquals(expected, actual);
     }
-
-
-
-
-
-
 }
