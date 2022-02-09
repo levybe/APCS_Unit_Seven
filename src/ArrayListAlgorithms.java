@@ -28,11 +28,12 @@ public class ArrayListAlgorithms {
     }
     public static ArrayList<String> removeDuplicates(String filename)throws FileNotFoundException {
         Scanner input = new Scanner(new File(filename));
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<String> list = new ArrayList<>();
         while (input.hasNext()) {
-            list.add(input.nextInt());
+            list.add(input.nextLine());
         }
         System.out.println(list);
+        return list;
     }
 /*
     public static ArrayList<Integer> orderedList()throws FileNotFoundException {
