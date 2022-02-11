@@ -21,5 +21,6 @@ public class Merge {
                 pos2++;
             }
         }
+        return listOne;
     }
 }
