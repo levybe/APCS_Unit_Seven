@@ -35,5 +35,25 @@ public class ScrabbleHelper {
         }
         return false;
     }
+
+    public ArrayList<String> findMatches(String pattern) {
+        ArrayList<String> matchingWords = new ArrayList<>();
+        for (String word : wordList) {
+            if (word.indexOf(pattern) != -1) {
+                matchingWords.add(word);
+            }
+        }
+        return matchingWords;
+    }
+
+    public void sortWords(ArrayList<String> words) {
+        for (int i = 1; i < words.size(); i++) {
+            String temp = words.get(i);
+            int possible = i;
+            while (possible > 0 && temp < ) {
+                possible = possible
+            }
+        }
+    }
 }
 
