@@ -50,8 +50,25 @@ public class ScrabbleHelper {
         for (int i = 1; i < words.size(); i++) {
             String temp = words.get(i);
             int possible = i;
-            while (possible > 0 && temp < ) {
-                possible = possible
+            while (possible > 0 && temp.length() < words.get(possible - 1).length()) {
+                words.set(possible, words.get(possible - 1));
+                possible--;
+            }
+            words.set(possible, temp);
+        }
+    }
+
+    public ArrayList<String> findWords (String letters) {
+        ArrayList<String> workingWords = new ArrayList<>();
+        ArrayList<Character> tiles = new ArrayList<>();
+        for (int i = 0; i < letters.length(); i++) {
+            tiles.add(letters.charAt(i));
+        }
+        for (String word : wordList) {
+            for (int i = 0; i < word.length(); i++) {
+                if (word.contains(tiles.get(i))) {
+
+                }
             }
         }
     }

@@ -9,7 +9,10 @@ public class ScrabbleDriver {
         ScrabbleHelper helper = new ScrabbleHelper();
 //        System.out.println(helper.getWordList().get(66349));
         String wordEntered = "Hello, world!";
-        System.out.println(helper.findMatches("ware"));
+        ArrayList<String> sorted = helper.findMatches("ware");
+        helper.sortWords(sorted);
+        System.out.println(sorted);
+
 //        while (wordEntered != "") {
 //            System.out.print("Enter a word to test: ");
 //            wordEntered = scan.nextLine();
