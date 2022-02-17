@@ -60,17 +60,19 @@ public class ScrabbleHelper {
 
     public ArrayList<String> findWords (String letters) {
         ArrayList<String> workingWords = new ArrayList<>();
-        ArrayList<Character> tiles = new ArrayList<>();
-        for (int i = 0; i < letters.length(); i++) {
-            tiles.add(letters.charAt(i));
-        }
         for (String word : wordList) {
+            ArrayList<Character> tiles = new ArrayList<>();
+            for (int i = 0; i < letters.length(); i++) {
+                tiles.add(letters.charAt(i));
+            }
             for (int i = 0; i < word.length(); i++) {
-                if (word.contains(tiles.get(i))) {
-
+                if (tiles.contains(word.charAt(i))) {
+                    tiles.remove((Character) word.charAt(i));
                 }
+
             }
         }
+        return workingWords;
     }
 }
 
