@@ -69,6 +69,7 @@ public class ScrabbleHelper {
                 if (tiles.contains(word.charAt(i))) {
                     tiles.remove((Character) word.charAt(i));
                 }
+                // Step 4 finished, go onto step 5.
 
             }
         }
